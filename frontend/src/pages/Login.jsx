@@ -53,6 +53,7 @@ function Login() {
             <input
               type="email"
               name="email"
+              id='email'
               placeholder="you@example.com"
               value={formData.email}
               onChange={handleChange}
@@ -66,6 +67,7 @@ function Login() {
             <input
               type="password"
               name="password"
+              id='password'
               placeholder="••••••••"
               value={formData.password}
               onChange={handleChange}

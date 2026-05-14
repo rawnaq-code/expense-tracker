@@ -49,10 +49,11 @@ function Register() {
         {/* Form */}
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+            <label htmlFor='name' className="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
             <input
               type="text"
               name="name"
+              id='name'
               placeholder="John Doe"
               value={formData.name}
               onChange={handleChange}
@@ -62,10 +63,11 @@ function Register() {
             />
           </div>
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">Email</label>
+            <label htmlFor='email' className="block text-sm font-medium text-gray-700 mb-1">Email</label>
             <input
               type="email"
               name="email"
+              id='email'
               placeholder="you@example.com"
               value={formData.email}
               onChange={handleChange}
@@ -75,10 +77,11 @@ function Register() {
             />
           </div>
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">Password</label>
+            <label htmlFor='password' className="block text-sm font-medium text-gray-700 mb-1">Password</label>
             <input
               type="password"
               name="password"
+              id='password'
               placeholder="••••••••"
               value={formData.password}
               onChange={handleChange}
